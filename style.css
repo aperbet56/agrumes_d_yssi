@@ -20,24 +20,319 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: #000000;
+    font-weight: 500;
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: "Big Shoulders", sans-serif;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 a,
 p,
-input,
 label,
+input,
 button {
+    font-size: 18px;
     font-family: "Lexend Deca", sans-serif;
+}
+
+input {
+    outline: none;
 }
 
 /**** body ****/
 
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
 
+/**** header et footer ****/
 
+header,
+footer {
+    padding: 10px 25px;
+    background-color: #fffffe;
+}
 
-/* font-family: "Lexend Deca", sans-serif; */
+/**** header ****/
+
+header {
+    justify-content: space-between;
+}
+
+header,
+.header__logo,
+.header__navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    margin-right: 10px;
+}
+
+/**** navigation ****/
+
+.header__list {
+    display: flex;
+}
+
+.header__list__item {
+    padding: 0 10px;
+}
+
+.header__list__item:last-child {
+    padding: 0 0 0 10px;
+}
+
+.header__list__item>a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #ffd803;
+    transition: width 0.3s ease-in-out;
+}
+
+.header__list__item:hover>a::after {
+    width: 100%;
+}
+
+.header__burger__btn {
+    display: none;
+}
+
+/**** main ****/
+
+.main__content {
+    flex-grow: 1;
+}
+
+/**** section ****/
+
+section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    padding: 50px 25px;
+}
+
+/**** section about ****/
+
+.about__section {
+    background-image: url(img/background.jpg);
+}
+
+.about__section__text {
+    line-height: 2;
+    text-align: center;
+}
+
+/**** section h2 ****/
+
+.about__section__title,
+.events__section__title,
+.contact__section__title {
+    margin-bottom: 50px;
+}
+
+/**** section events et section contact ****/
+
+.events__section,
+.contact__section {
+    background-image: url(img/Fond.png);
+}
+
+/**** section events ****/
+
+.events__section__content,
+.contact__section__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 45%;
+    height: 400px;
+    margin-bottom: 30px;
+    border: 2px solid #2d334a;
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card,
+.card__legend {
+    background-color: #fffffe;
+    border-radius: 8px;
+}
+
+.card__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card__legend {
+    padding: 15px 20px;
+}
+
+.card__title,
+.card__subtitle {
+    margin-bottom: 10px;
+}
+
+.card__subtitle {
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+/**** section events ****/
+
+iframe {
+    border: none;
+    height: 400px;
+    transition: transform 0.3s ease-out;
+}
+
+iframe:hover {
+    transform: scale(1.02);
+}
+
+iframe,
+.contact__section__form {
+    width: 45%;
+}
+
+iframe,
+.contact__section__form,
+input {
+    border-radius: 8px;
+}
+
+.contact__section__form {
+    padding: 20px;
+    background-color: #fffffe;
+}
+
+.contact__section__form__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form__group {
+    position: relative;
+}
+
+.form__group,
+input,
+button {
+    width: 100%;
+}
+
+input {
+    margin: 16px 0;
+    padding: 10px;
+    color: #2d334a;
+    border: 2px solid #ffd803;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    padding: 0 6px;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #2d334a;
+}
+
+input:focus+label,
+input:valid+label {
+    top: 10%;
+    left: 5%;
+    transform: translate(-5%, -10%);
+    background-color: #fffffe;
+    color: #ffd803;
+}
+
+.submit__btn {
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffd803;
+    padding: 8px;
+    color: #2d334a;
+    border: 2px solid #fffffe;
+    border-radius: 0;
+    margin-top: 10px;
+    transition: border-radius 0.3s ease;
+}
+
+.submit__btn:hover {
+    border-radius: 20px;
+}
+
+/**** footer ****/
+
+footer {
+    margin-top: 30px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__list,
+.footer__text {
+    margin: 20px 0;
+}
+
+.footer__list__item {
+    margin-right: 20px;
+}
+
+.footer__list__item i {
+    font-size: 40px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer__list__item i:hover {
+    color: #ffd803;
+}
+
+.footer__text {
+    text-align: center;
+    font-weight: 500;
+}
