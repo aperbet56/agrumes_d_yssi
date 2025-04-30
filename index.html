@@ -16,6 +16,190 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Début du header -->
+    <header>
+      <div class="header__logo">
+        <img
+          src="img/logo-2.png"
+          alt="Logo de Agrumes d'Yssi"
+          class="header__logo__img"
+        />
+        <h1 class="header__title">
+          Agrumes <br />
+          d'Yssi
+        </h1>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li class="header__list__item">
+            <a href="#about" class="header__link first">A propos</a>
+          </li>
+          <li class="header__list__item">
+            <a href="#events" class="header__link second">Evènements</a>
+          </li>
+          <li class="header__list__item">
+            <a href="#contact" class="header__link third">Contact</a>
+          </li>
+        </ul>
+        <button class="header__burger__btn">
+          <span class="header__burger__btn__bar"></span>
+        </button>
+      </nav>
+    </header>
+    <!-- Fin du header -->
+
+    <!-- Début du marquee -->
+    <!-- Fin du marquee -->
+
+    <!--Début du main -->
+    <main class="main__content">
+      <!-- Début de la section about -->
+      <section class="about__section" id="about">
+        <h2 class="about__section__title">
+          👋 Bienvenue chez Agrumes d'Yssi 🍋
+        </h2>
+        <p class="about__section__text">
+          Nos producteurs locaux et biologiques vous proposent de découvrir
+          leurs produits (oranges, citrons, mandarines, pomelos...) sur les
+          marchés de Haute-Loire mais aussi lors de dégustations privées dans
+          nos locaux situés 69 Rue Voltaire à Yssingeaux.
+        </p>
+      </section>
+      <!-- Fin de la section about -->
+
+      <!-- Début de la section event -->
+      <section class="events__section" id="events">
+        <h2 class="events__section__title">Nos différents évènements !</h2>
+        <div class="events__section__content">
+          <figure class="card">
+            <img class="card__img" src="img/lemon.jpg" alt="Citroniers" />
+            <figcaption class="card__legend">
+              <div class="card__content">
+                <h3 class="card__title">Cueillette de citrons</h3>
+                <p class="card__subtitle">
+                  Venez apprendre à sélectionner des agrumes à la main provenant
+                  de nos cultures responsables.
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img
+              class="card__img"
+              src="img/sliced-lemon-fruit-in-glass-picher.jpg"
+              alt="Citronnade"
+            />
+            <figcaption class="card__legend">
+              <div class="card__content">
+                <h3 class="card__title">Citronnade</h3>
+                <p class="card__subtitle">
+                  Venez apprendre à réaliser une boisson gourmande à base d'eau,
+                  de jus de citron et de sucre.
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img
+              class="card__img"
+              src="img/confiture-agrumes.jpg"
+              alt="Confiture d'agrumes"
+            />
+            <figcaption class="card__legend">
+              <div class="card__content">
+                <h3 class="card__title">Confiture d'agrumes</h3>
+                <p class="card__subtitle">
+                  Venez apprendre à confectionner des confitures d'agrumes
+                  artisanales, fruitées, acidulées.
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <img
+              class="card__img"
+              src="img/agrumes-en-gelee-citronnee-sorbet-pamplemousse.jpeg"
+              alt="Sorbet d'agrumes"
+            />
+            <figcaption class="card__legend">
+              <div class="card__content">
+                <h3 class="card__title">Sorbet d'agrumes</h3>
+                <p class="card__subtitle">
+                  Venez apprendre à créer de magnifiques sorbets d'agrumes
+                  artisanaux, délicats et parfumés.
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- Fin de la section event -->
+
+      <!-- Début de la section contact -->
+      <section class="contact__section" id="contact">
+        <h2 class="contact__section__title">
+          Inscrivez-vous à nos prochains évènements !
+        </h2>
+        <div class="contact__section__content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180135.48283640432!2d3.8292464028866746!3d45.134098062948475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5935dc441fcd7%3A0x713097810dd3f982!2s43200%20Yssingeaux!5e0!3m2!1sfr!2sfr!4v1745859490136!5m2!1sfr!2sfr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <form action="#" class="contact__section__form">
+            <h3 class="contact__section__form__title">
+              Envie d'en savoir plus...
+            </h3>
+            <div class="form__group">
+              <input type="text" name="name" id="name" required />
+              <label for="name">Nom</label>
+            </div>
+            <div class="form__group">
+              <input type="text" name="firstname" id="firstname" required />
+              <label for="firstname">Prénom</label>
+            </div>
+            <div class="form__group">
+              <input type="email" name="email" id="email" required />
+              <label for="email">Email</label>
+            </div>
+            <button class="submit__btn">S'inscrire</button>
+          </form>
+        </div>
+      </section>
+      <!-- Fin de la section contact-->
+    </main>
+    <!-- Fin du main -->
+
+    <!-- Début de la div cookies -->
+    <!-- Fin de la div cookies -->
+
+    <!-- Début du footer -->
+    <footer>
+      <h2 class="footer__title">Retrouvez-nous sur les réseaux sociaux !</h2>
+      <ul class="footer__list">
+        <li class="footer__list__item">
+          <a href="#" class="footer__link"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#" class="footer__link"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+        </li>
+        <li class="footer__list__item">
+          <a href="#" class="footer__link"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="footer__text">Copyright <span>2025</span>. Agrumes d'Yssi.</p>
+    </footer>
+    <!-- Fin du footer -->
     <!-- Importation des scripts -->
     <script src="script.js"></script>
   </body>
