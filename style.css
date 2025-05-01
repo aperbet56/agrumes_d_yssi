@@ -30,6 +30,7 @@ h3 {
 
 h1 {
     font-size: 26px;
+    margin: 0;
 }
 
 h2 {
@@ -69,7 +70,7 @@ body {
 
 header,
 footer {
-    padding: 10px 25px;
+    padding: 25px;
     background-color: #fffffe;
 }
 
@@ -213,23 +214,18 @@ section {
     width: 45%;
     height: 400px;
     margin-bottom: 30px;
-    border: 2px solid #2d334a;
-    will-change: transform;
-    transition: transform 0.3s ease-in-out;
+    background-color: #fffffe;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: scale(1.03);
-}
-
-.card,
-.card__legend {
-    background-color: #fffffe;
-    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.69);
 }
 
 .card__img {
     width: 100%;
+    height: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
@@ -242,6 +238,15 @@ section {
 .card__title,
 .card__subtitle {
     margin-bottom: 10px;
+}
+
+.card__title::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    margin-top: 3px;
+    background-color: #ffd803;
 }
 
 .card__subtitle {
@@ -340,18 +345,10 @@ input:valid+label {
 
 /**** footer ****/
 
-footer {
-    margin-top: 30px;
-}
-
 .footer__list {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footer__list,
-.footer__text {
     margin: 20px 0;
 }
 
