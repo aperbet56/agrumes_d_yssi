@@ -121,6 +121,31 @@ header,
     display: none;
 }
 
+/**** marquee ****/
+
+.container__marquee {
+    display: flex;
+    overflow-x: hidden;
+    background-color: #ffd803;
+    color: #2d334a;
+    padding: 20px;
+}
+
+.txt__marquee {
+    text-transform: uppercase;
+    flex-shrink: 0;
+    font-size: 20px;
+    animation: scrollText 8s linear infinite;
+}
+
+/**** Animation scrollText ****/
+
+@keyframes scrollText {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /**** main ****/
 
 .main__content {
