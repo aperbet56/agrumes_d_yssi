@@ -19,7 +19,6 @@ ul {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: #000000;
     font-weight: 500;
 }
 
@@ -49,6 +48,7 @@ input,
 button {
     font-size: 18px;
     font-family: "Lexend Deca", sans-serif;
+    color: #2d334a;
 }
 
 input {
@@ -88,6 +88,16 @@ header,
 
 .header__logo img {
     margin-right: 10px;
+    filter: drop-shadow(0 0.1vw 0.1vw #000000) drop-shadow(0.1vw 0vw 0.1vw #000000);
+    animation: rotationLogo 3s infinite linear;
+}
+
+/**** Animation rotationLogo ****/
+
+@keyframes rotationLogo {
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 /**** navigation ****/
