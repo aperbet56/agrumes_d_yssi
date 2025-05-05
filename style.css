@@ -324,7 +324,7 @@ input:valid+label {
     left: 5%;
     transform: translate(-5%, -10%);
     background-color: #fffffe;
-    color: #ffd803;
+    color: #2d334a;
 }
 
 .submit__btn {
@@ -375,6 +375,13 @@ input:valid+label {
 
 @media screen and (max-width: 767px) {
 
+    p,
+    input,
+    label,
+    button {
+        font-size: 17px;
+    }
+
     header {
         position: relative;
         height: auto;
@@ -385,19 +392,19 @@ input:valid+label {
         width: 100%;
         min-height: 50vh;
         right: 0;
-        transform: translateX(100%);
+        transform: translateY(-100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #fffffe;
-        border-bottom: 2px solid #ffd803;
         transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
         z-index: 5;
     }
 
     .header__navigation.active {
         transform: translate(0);
+        border-bottom: 2px solid #ffd803;
     }
 
     .header__list {
@@ -457,13 +464,12 @@ input:valid+label {
         transform: translateY(0) rotate(-135deg);
     }
 
-
-    .about__section__text {
-        font-weight: 700;
+    .txt__marquee {
+        font-size: 17px;
     }
 
     .card__img {
-        height: 230px;
+        height: 225px;
     }
 
     .events__section__content,
