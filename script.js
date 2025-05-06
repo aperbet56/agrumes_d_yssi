@@ -1,26 +1,15 @@
 // Récupération des éléments HTML5
 const navigation = document.querySelector(".header__navigation");
-//console.log(navigation);
 const menuBurger = document.querySelector(".header__burger__btn");
-//console.log(menuBurger);
 const navLinks = document.querySelectorAll(".header__link");
-//console.log(navLinks);
 const footerCopyrightYear = document.querySelector(".footer__text__year");
-//console.log(footerCopyrightYear);
 const lastNameEmoji = document.querySelector(".lastNameEmoji");
-//console.log(lastNameEmoji);
 const firstNameEmoji = document.querySelector(".firstNameEmoji");
-//console.log(firstNameEmoji);
 const emailEmoji = document.querySelector(".emailEmoji");
-//console.log(emailEmoji);
 const firstName = document.querySelector("#firstName");
-//console.log(firstName);
 const lastName = document.querySelector("#lastName");
-//console.log(lastName);
 const email = document.querySelector("#email");
-//console.log(email);
 const arrowBtn = document.querySelector(".arrow__btn");
-//console.log(arrowBtn)
 
 // Déclaration de la fonction toggleNav qui va permettre l'affichage des liens de navigation
 const toggleNav = () => {
