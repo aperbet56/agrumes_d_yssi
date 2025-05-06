@@ -19,6 +19,8 @@ const lastName = document.querySelector("#lastName");
 //console.log(lastName);
 const email = document.querySelector("#email");
 //console.log(email);
+const arrowBtn = document.querySelector(".arrow__btn");
+//console.log(arrowBtn)
 
 // Déclaration de la fonction toggleNav qui va permettre l'affichage des liens de navigation
 const toggleNav = () => {
@@ -154,3 +156,19 @@ const send = () => {
 };
 // Appel de la fonction send()
 send();
+
+// Déclaration de la fonction scrollTo qui va permettre à l'utilisation de revenir en haut de la page web
+const scrollTo = () => {
+  // Ecoute de l'événement "click" sur la flèche
+  arrowBtn.addEventListener("click", () => {
+    // La méthode Window.scrollTo() permet de faire défiler la fenêtre pour atteindre les coordonnées données dans le document.
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth", // Le défilement se fait en douceur
+    });
+  });
+};
+
+// Appel de la fonction scrollTo()
+scrollTo();
