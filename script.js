@@ -7,6 +7,18 @@ const navLinks = document.querySelectorAll(".header__link");
 //console.log(navLinks);
 const footerCopyrightYear = document.querySelector(".footer__text__year");
 //console.log(footerCopyrightYear);
+const lastNameEmoji = document.querySelector(".lastNameEmoji");
+//console.log(lastNameEmoji);
+const firstNameEmoji = document.querySelector(".firstNameEmoji");
+//console.log(firstNameEmoji);
+const emailEmoji = document.querySelector(".emailEmoji");
+//console.log(emailEmoji);
+const firstName = document.querySelector("#firstName");
+//console.log(firstName);
+const lastName = document.querySelector("#lastName");
+//console.log(lastName);
+const email = document.querySelector("#email");
+//console.log(email);
 
 // Déclaration de la fonction toggleNav qui va permettre l'affichage des liens de navigation
 const toggleNav = () => {
@@ -42,3 +54,7 @@ const getCurrentYear = () => {
 };
 // Appel de la fonction getCurrentYear()
 getCurrentYear();
+
+// Regex
+const regexName = /^[A-Z][A-Za-z\é\è\ê\ô\-]+$/;
+const regexEmail = /^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$/;
