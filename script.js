@@ -78,3 +78,23 @@ const lastNameValidation = (lastName) => {
 };
 // Appel de la fonction lastNameValidation
 lastNameValidation(lastName);
+
+/**
+ * Fonction firstNameValidation pour la validation du champ prénom
+ * @param {String} firstName
+ */
+const firstNameValidation = (firstName) => {
+  // Ecoute de l'événement "change" sur l'input firstName
+  firstName.addEventListener("change", (e) => {
+    e.preventDefault();
+    if (regexName.test(firstName.value) == false) {
+      firstNameEmoji.textContent = "❌";
+      return false;
+    } else {
+      firstNameEmoji.textContent = "✔️";
+      return true;
+    }
+  });
+};
+// Appel de la fonction firstNameValidation
+firstNameValidation(firstName);
