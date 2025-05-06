@@ -144,6 +144,11 @@ const send = () => {
       alert(
         "Inscription confirmée ! Nous allons vous envoyer un mail contenant les dates de nos prochains évènements. Cordialement."
       );
+      // Rechargement de la page
+      window.location.reload();
+      lastName.value = "";
+      firstName.value = "";
+      email.value = "";
     }
   });
 };
