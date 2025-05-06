@@ -258,7 +258,7 @@ section {
 
 iframe {
     border: none;
-    height: 400px;
+    height: 450px;
     transition: transform 0.3s ease-out;
 }
 
@@ -327,6 +327,18 @@ input:valid+label {
     color: #2d334a;
 }
 
+.lastNameEmoji,
+.firstNameEmoji,
+.emailEmoji {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    font-size: 18px;
+}
+
 .submit__btn {
     cursor: pointer;
     text-transform: uppercase;
@@ -378,7 +390,10 @@ input:valid+label {
     p,
     input,
     label,
-    button {
+    button,
+    .lastNameEmoji,
+    .firstNameEmoji,
+    .emailEmoji {
         font-size: 17px;
     }
 
