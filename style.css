@@ -356,6 +356,7 @@ input:valid+label {
 }
 
 /**** div arrow btn ****/
+
 .arrow__btn {
     position: fixed;
     bottom: 25px;
