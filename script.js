@@ -98,3 +98,23 @@ const firstNameValidation = (firstName) => {
 };
 // Appel de la fonction firstNameValidation
 firstNameValidation(firstName);
+
+/**
+ * Déclaration de la fonction emailValidation pour la validation du champ email
+ * @param {String} email
+ */
+const emailValidation = (email) => {
+  // Ecoute de l'événement "change" sur l'input email
+  email.addEventListener("change", (e) => {
+    e.preventDefault();
+    if (regexEmail.test(email.value) == false) {
+      emailEmoji.textContent = "❌";
+      return false;
+    } else {
+      emailEmoji.textContent = "✔️";
+      return true;
+    }
+  });
+};
+// Appel de la fonction emailValidation
+emailValidation(email);
