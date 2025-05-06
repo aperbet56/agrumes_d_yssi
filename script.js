@@ -58,3 +58,23 @@ getCurrentYear();
 // Regex
 const regexName = /^[A-Z][A-Za-z\é\è\ê\ô\-]+$/;
 const regexEmail = /^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$/;
+
+/**
+ * Déclaration de la fonction lastNameValidation pour la validation du champ nom
+ *  @param {String} lastName
+ */
+const lastNameValidation = (lastName) => {
+  // Ecoute de l'événement "change" sur l'input lastName
+  lastName.addEventListener("change", (e) => {
+    e.preventDefault();
+    if (regexName.test(lastName.value) == false) {
+      lastNameEmoji.textContent = "❌";
+      return false;
+    } else {
+      lastNameEmoji.textContent = "✔️";
+      return true;
+    }
+  });
+};
+// Appel de la fonction lastNameValidation
+lastNameValidation(lastName);
