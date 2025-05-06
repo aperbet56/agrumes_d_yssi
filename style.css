@@ -417,7 +417,6 @@ input:valid+label {
 
     header {
         position: relative;
-        height: auto;
     }
 
     .header__navigation {
@@ -499,6 +498,13 @@ input:valid+label {
 
     .txt__marquee {
         font-size: 17px;
+    }
+
+    .about__section__text {
+        background-color: #fffffe;
+        padding: 10px;
+        opacity: 0.8;
+        border-radius: 4px;
     }
 
     .card__img {
