@@ -118,3 +118,34 @@ const emailValidation = (email) => {
 };
 // Appel de la fonction emailValidation
 emailValidation(email);
+
+// Déclaration de la fonction send qui permet d'envoyer les données
+const send = () => {
+  // Récupération du bouton "S'inscrire !"
+  const btn = document.querySelector(".submit__btn");
+  // Ecoute de l'événement "click" sur le bouton
+  btn.addEventListener("click", (e) => {
+    // Suppression du comportement par défaut
+    e.preventDefault();
+    if (
+      regexName.test(firstName.value) == false ||
+      regexName.test(lastName.value) == false ||
+      regexEmail.test(email.value) == false
+    ) {
+      alert("Veuillez remplir correctement tous les champs du formulaire !");
+    } else {
+      // Création de l'objet contact
+      const contact = {
+        firstName: firstName.value,
+        lastName: lastName.value,
+        email: email.value,
+      };
+      console.log(contact);
+      alert(
+        "Inscription confirmée ! Nous allons vous envoyer un mail contenant les dates de nos prochains évènements. Cordialement."
+      );
+    }
+  });
+};
+// Appel de la fonction send()
+send();
