@@ -47,22 +47,6 @@ const getCurrentYear = () => {
 // Appel de la fonction getCurrentYear()
 getCurrentYear();
 
-// Déclaration de la fonction scrollTo qui va permettre à l'utilisation de revenir en haut de la page web
-const scrollTo = () => {
-  // Ecoute de l'événement "click" sur la flèche
-  arrowBtn.addEventListener("click", () => {
-    // La méthode Window.scrollTo() permet de faire défiler la fenêtre pour atteindre les coordonnées données dans le document.
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth", // Le défilement se fait en douceur
-    });
-  });
-};
-
-// Appel de la fonction scrollTo()
-scrollTo();
-
 // Regex
 const regexName = /^[A-Z][A-Za-z\é\è\ê\ô\-]+$/;
 const regexEmail = /^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$/;
