@@ -157,6 +157,7 @@ const send = () => {
       lastName.value = "";
       firstName.value = "";
       email.value = "";
+      window.scrollTo(0, 0);
     }
   });
 };
