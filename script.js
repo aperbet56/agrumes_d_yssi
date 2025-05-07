@@ -47,6 +47,22 @@ const getCurrentYear = () => {
 // Appel de la fonction getCurrentYear()
 getCurrentYear();
 
+// Déclaration de la fonction scrollTo qui va permettre à l'utilisation de revenir en haut de la page web
+const scrollTo = () => {
+  // Ecoute de l'événement "click" sur la flèche
+  arrowBtn.addEventListener("click", () => {
+    // La méthode Window.scrollTo() permet de faire défiler la fenêtre pour atteindre les coordonnées données dans le document.
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth", // Le défilement se fait en douceur
+    });
+  });
+};
+
+// Appel de la fonction scrollTo()
+scrollTo();
+
 // Regex
 const regexName = /^[A-Z][A-Za-z\é\è\ê\ô\-]+$/;
 const regexEmail = /^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$/;
@@ -147,8 +163,8 @@ const send = () => {
 // Appel de la fonction send()
 send();
 
-// Déclaration de la fonction scrollTo qui va permettre à l'utilisation de revenir en haut de la page web
-const scrollTo = () => {
+// Déclaration de la fonction scroll qui va permettre à l'utilisation de revenir en haut de la page web
+const scroll = () => {
   // Ecoute de l'événement "click" sur la flèche
   arrowBtn.addEventListener("click", () => {
     // La méthode Window.scrollTo() permet de faire défiler la fenêtre pour atteindre les coordonnées données dans le document.
@@ -160,8 +176,8 @@ const scrollTo = () => {
   });
 };
 
-// Appel de la fonction scrollTo()
-scrollTo();
+// Appel de la fonction scroll()
+scroll();
 
 // Création de l'objet options permettant de contrôler les circonstances selon lesquelles la fonction callback de l'observateur est invoquée
 let options = {
