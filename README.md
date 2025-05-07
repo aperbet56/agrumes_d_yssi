@@ -2,9 +2,11 @@
 
 ## Le challenge
 
+Création du site complet Agrumes d'Yssi en HTML5, CSS3 et JavaScript.
+
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/agrumes_d_yssi/
 
 ## Projet développé avec
 
