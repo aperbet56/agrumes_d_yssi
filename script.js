@@ -55,8 +55,8 @@ const regexEmail = /^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$/;
  *  @param {String} lastName
  */
 const lastNameValidation = (lastName) => {
-  // Ecoute de l'événement "change" sur l'input lastName
-  lastName.addEventListener("change", (e) => {
+  // Ecoute de l'événement "input" sur l'input lastName
+  lastName.addEventListener("input", (e) => {
     e.preventDefault();
     if (regexName.test(lastName.value) == false) {
       lastNameEmoji.textContent = "❌";
@@ -75,8 +75,8 @@ lastNameValidation(lastName);
  * @param {String} firstName
  */
 const firstNameValidation = (firstName) => {
-  // Ecoute de l'événement "change" sur l'input firstName
-  firstName.addEventListener("change", (e) => {
+  // Ecoute de l'événement "input" sur l'input firstName
+  firstName.addEventListener("input", (e) => {
     e.preventDefault();
     if (regexName.test(firstName.value) == false) {
       firstNameEmoji.textContent = "❌";
@@ -95,8 +95,8 @@ firstNameValidation(firstName);
  * @param {String} email
  */
 const emailValidation = (email) => {
-  // Ecoute de l'événement "change" sur l'input email
-  email.addEventListener("change", (e) => {
+  // Ecoute de l'événement "input" sur l'input email
+  email.addEventListener("input", (e) => {
     e.preventDefault();
     if (regexEmail.test(email.value) == false) {
       emailEmoji.textContent = "❌";
